@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CrowPanel N95 Backup</title>
+  <meta name="description" content="CrowPanel N95 Backup is a private, single-user utility that copies encrypted PostgreSQL backup archives to its owner's own Google Drive.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">CrowPanel N95 Backup</a>
+      <nav aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="privacy.html">Privacy policy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <p class="eyebrow">Private backup utility</p>
+      <h1>CrowPanel N95 Backup</h1>
+      <p class="lead">
+        A private, single-user application that keeps encrypted PostgreSQL
+        backup archives copied from a personal home server to the owner's
+        own Google Drive.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>What this application does</h2>
+      <p>
+        CrowPanel N95 Backup runs on its owner's personal home server. On a
+        scheduled basis it uses <strong>rclone</strong> to transfer encrypted
+        PostgreSQL backup archives from that server to the owner's Google
+        Drive account.
+      </p>
+      <p>
+        The application is not a public backup service. It has no user
+        accounts, is not offered to third-party users, and is operated only
+        by its owner.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Google Drive access</h2>
+      <p>
+        The application requests Google Drive's <code>drive.file</code>
+        permission. This allows it to create and manage only the backup files
+        it creates in Google Drive. It does not grant access to other files in
+        the owner's Drive, and it cannot access anyone else's Drive.
+      </p>
+      <p>
+        OAuth credentials and tokens remain on the owner's server. They are
+        not published on this website.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Privacy</h2>
+      <p>
+        This website is informational. It uses no cookies, analytics or
+        tracking, and it provides no access to the application or to backup
+        data.
+      </p>
+      <p>
+        Read the <a href="privacy.html">privacy policy</a> for details on what
+        the application accesses, how Google Drive and rclone are used, and
+        how data is retained.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>CrowPanel N95 Backup &middot; Private single-user utility</p>
+    </div>
+  </footer>
+</body>
+</html>
